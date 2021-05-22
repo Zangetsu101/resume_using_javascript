@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Resume of Tameem Bin Haider</title>
+    <script>
+      function expand(event) {
+        event.preventDefault();
+        let svg = this.querySelector('svg');
+        svg.classList.toggle('transform');
+        svg.classList.toggle('rotate-180');
+        let details = this.querySelector('.details');
+        details.classList.toggle('hidden');
+        let italic = this.querySelector('.italic');
+        italic?.classList.toggle('text-right')
+      }
+    </script>
+  </head>
+  <body>
+    <div class="max-w-screen-sm mx-auto px-10 py-5 md:max-w-screen-lg bg-green-400">
+      <div class="md:flex bg-green-50 p-5 rounded-3xl text-green-400 text-center md:text-left md:justify-around">
+        <div>
+          <img class="object-cover h-48 w-48 rounded-full mx-auto" src="profile.jpg">
+        </div>
+        <div class="mt-3 md:my-auto">
+          <p class="font-bold text-lg">Tameem Bin Haider</p>
+          <p><b>Email:</b> haidertameem@gmail.com</p>
+          <p><b>Contact</b>: 01521303978</p>
+          <p><b>Github:</b> 
+            <a class="text-blue-600" href="https://github.com/Zangetsu101" target="_blank">Zangetsu101</a> 
+          </p>
+          <p class="item"><b>LinkedIn:</b> 
+            <a class="text-blue-600"
+              href="https://www.linkedin.com/in/tameem-bin-haider-516871202/" target="_blank">
+              Tameem Bin Haider
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="pt-5 md:flex md:gap-x-5">
+        <div class="md:flex-1">
+          <div class="bg-green-50 p-5 rounded-3xl text-green-400">
+            <p class="font-bold text-2xl mb-3 text-center">Education</p>
+            <div class="p-3 border-2 border-green-400 rounded-lg cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">B.Sc. in Computer Science and Engineering</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">Bangladesh University of Engineering and Technology</p>
+              <p class="italic text-right">February 2016 - February 2021</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3 cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">Higher Secondary Certificate in Science</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">Notre Dame College</p>
+              <p class="italic text-right">July 2013 - June 2015</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3 cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">Secondary School Certificate in Science</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">Thakurgaon Govt. Boys' High School</p>
+              <p class="italic text-right">January 2004 - June 2013</p>
+            </div>
+          </div>
+          <div class="mt-5 bg-green-50 p-5 rounded-3xl text-green-400">
+            <p class="font-bold text-2xl mb-3 text-center">Major Projects</p>
+            <div class="p-3 border-2 border-green-400 rounded-lg cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">CodeFixer</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">An LLVM and Clang based tool for fixing concurrency bugs in C programs.</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3 cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">ShasthoSeba</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">
+                A telemedicine app for online consultation where I was responsible for the mobile app frontend in Flutter.
+              </p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3 cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">Smurf Attack</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">
+                Implemented a C program that broadcasts large numbers of Internet Control Message Protocol (ICMP) packets with the intended victim's spoofed source IP.
+              </p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3 cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">Pharmacy Management</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">Developed a pharmacy management system using Vue.js, Laravel and MySQL.</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3 cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">Battleship</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">Implemented this two player game in Java (Networking, Threading, JavaFX).</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3 cursor-pointer" onclick="expand.call(this, event)">
+              <div class="flex justify-between">
+                <p class="font-bold text-lg">Tic Tac Toe</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <p class="details hidden">Implemented this game using C and iGraphics (based on OpenGL library).</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:flex-1">
+          <div class="mt-5 md:mt-0 bg-green-50 p-5 rounded-3xl text-green-400">
+            <p class="font-bold text-2xl mb-3 text-center">Technical Skills</p>
+            <div class="p-3 border-2 border-green-400 rounded-lg">
+              <p class="font-bold text-lg">Programming Language:</p>
+              <p>C, C++, Java, Python, PHP, Javascript, Dart</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3">
+              <p class="font-bold text-lg">Software Framework / Library:</p>
+              <p>Flutter, Laravel, Vue.js</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3">
+              <p class="font-bold text-lg">Database:</p>
+              <p>MySQL, Oracle</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3">
+              <p class="font-bold text-lg">Operating System:</p>
+              <p>Windows, Ubuntu</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3">
+              <p class="font-bold text-lg">Version Control:</p>
+              <p>Github</p>
+            </div>
+          </div>
+          <div class="mt-5 bg-green-50 p-5 rounded-3xl text-green-400">
+            <p class="font-bold text-2xl mb-3 text-center">Contest Participation</p>
+            <div class="md:mb-2 p-3 border-2 border-green-400 rounded-lg">
+              <p class="font-bold text-lg">Intra BUET Junior Programming Contest 2017</p>
+                <p class="italic text-right">1st Position</p>
+            </div>
+            <div class="md:mb-2 p-3 border-2 border-green-400 rounded-lg mt-3">
+              <p class="font-bold text-lg">BUET Inter-University Programming Contest 2018</p>
+                <p class="italic text-right">56th Position</p>
+            </div>
+            <div class="md:mb-2 p-3 border-2 border-green-400 rounded-lg mt-3">
+              <p class="font-bold text-lg">NSU Inter-University Programming Contest 2018</body>
+                <p class="italic text-right">38th Position</p>
+            </div>
+            <div class="p-3 border-2 border-green-400 rounded-lg mt-3">
+              <p class="font-bold text-lg">BUET Inter-University Programming Contest 2019</p>
+                <p class="italic text-right">30th Position</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 bg-green-50 p-5 rounded-3xl text-green-400">
+        <p class="font-bold text-2xl mb-3 text-center">Publications</p> 
+        <div class="md:mb-2 p-3 border-2 border-green-400 rounded-lg">
+          <p>
+            Alamin, Md Abdullah Al & Malakar, Sanjay & Uddin, Gias & Afroz, Sadia & Haider, Tameem & Iqbal, Anindya. (2021). <span class="italic font-bold">An Empirical Study of Developer Discussions on Low-Code Software Development Challenges.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
