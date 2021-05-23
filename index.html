@@ -5,18 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Resume of Tameem Bin Haider</title>
-    <script>
-      function expand(event) {
-        event.preventDefault();
-        let svg = this.querySelector('svg');
-        svg.classList.toggle('transform');
-        svg.classList.toggle('rotate-180');
-        let details = this.querySelector('.details');
-        details.classList.toggle('hidden');
-        let italic = this.querySelector('.italic');
-        italic?.classList.toggle('text-right')
-      }
-    </script>
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="max-w-screen-sm mx-auto px-5 py-5 md:max-w-screen-lg bg-green-400">
@@ -28,17 +17,40 @@
         <!-- profile details -->
         <div class="mt-3 md:my-auto">
           <p class="font-bold text-lg">Tameem Bin Haider</p>
-          <p><b>Email:</b> haidertameem@gmail.com</p>
-          <p><b>Contact</b>: 01521303978</p>
-          <p><b>Github:</b> 
+          <p><span class="font-bold">Email:</span> haidertameem@gmail.com</p>
+          <p><span class="font-bold">Contact</span>: 01521303978</p>
+          <p><span class="font-bold">Github:</span> 
             <a class="text-blue-600" href="https://github.com/Zangetsu101" target="_blank">Zangetsu101</a> 
           </p>
-          <p class="item"><b>LinkedIn:</b> 
+          <p><span class="font-bold">LinkedIn:</span> 
             <a class="text-blue-600"
               href="https://www.linkedin.com/in/tameem-bin-haider-516871202/" target="_blank">
               Tameem Bin Haider
             </a>
           </p>
+          <div class="cursor-pointer" onclick="showWeather.call(this, event)">
+            <p><span class="font-bold">Location: </span>Goalpara, Thakurgaon</p>
+            <div class="hidden modal absolute mx-auto bg-green-400 text-green-50 p-5 rounded-lg">
+              <div class="loading">Loading</div>
+              <div class="hidden body flex flex-col">
+                <p class="text-center">Weather at Thakurgaon</p>
+                <p class="weather text-center">Weather</p>
+                <p class="description text-center">Weather Description</p>
+                <div class="flex justify-between gap-x-3">
+                  <p>Temperature: <span class="temp">33.00</span></p>
+                  <p>Feels Like: <span class="feels">33.00</span></p>
+                </div>
+                <div class="flex justify-between">
+                  <p>Min: <span class="min">33.00</span></p>
+                  <p>Max: <span class="max">33.00</span></p>
+                </div>
+                <div class="flex justify-between">
+                  <p>Wind: <span class="wind">25%</span></p>
+                  <p>Humidity: <span class="hum">25%</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pt-5 md:flex md:gap-x-5">

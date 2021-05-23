@@ -1,0 +1,1 @@
+GET api.openweathermap.org/data/2.5/weather?q=Thakurgaon&appid=7e654e7c4d57f87cb142cab47ad49102&units=metric
